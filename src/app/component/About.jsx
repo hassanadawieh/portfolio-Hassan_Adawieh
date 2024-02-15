@@ -10,7 +10,7 @@ const About = () => {
         <div className=" w-[100%] sm:w-[40%] flex items-center justify-center">
           <div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Hi there! I'm Hassan Adawieh, a passionate full stack web and
+              Hi there! I am Hassan Adawieh, a passionate full stack web and
               mobile developer with extensive experience in building
               user-friendly applications and establishing robust API
               relationships using Laravel. My expertise spans across various
@@ -20,8 +20,8 @@ const About = () => {
             <p className="mt-4 text-lg text-gray-700 leading-relaxed">
               I have a knack for clean code and problem-solving, ensuring
               efficient and maintainable solutions. With experience working
-              remotely and on-site, I'm comfortable both working independently
-              and as part of a team. Whether it's crafting elegant front-end
+              remotely and on-site, I am comfortable both working independently
+              and as part of a team. Whether it is crafting elegant front-end
               interfaces or architecting scalable back-end systems, I thrive on
               bringing ideas to life through code.
             </p>
