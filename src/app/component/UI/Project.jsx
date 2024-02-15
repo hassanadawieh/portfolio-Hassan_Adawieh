@@ -21,7 +21,7 @@ const Project = ({ project }) => {
               className="text-green-500 text-[1.2rem] sm:text-[2rem]"
               href={project.codeUrl}
             >
-              &lt;Code&gt;
+              Code
             </a>
           )}
           {project.url !== "" && (
