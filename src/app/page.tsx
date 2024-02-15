@@ -17,9 +17,9 @@ export default function Home() {
       <NavBar />
       <div className="px-2 sm:px-20 h-[90vh] flex items-center justify-center">
         <div className="font-mono flex items-center flex-col">
-          <p className="">LET'S BUILD SOMETHING TOGETHER</p>
+          <p className="">LET IS BUILD SOMETHING TOGETHER</p>
           <h2 className="text-[2rem] sm:text-[3rem] text-center">
-            Hey,I'm{" "}
+            Hey,I am{" "}
             <span className="font-mono text-green-700">Hassan Adawieh</span>
           </h2>
           <h3 className="text-[1.2rem] font-bold text-center">
