@@ -14,7 +14,7 @@ const NavBar = () => {
   };
   return (
     <div className="fixed w-full h-[10vh] flex items-center justify-between  sm:px-20 z-10 bg-green-600 shadow-lg">
-      <Image src="/portfolio-logo.svg" width={200} height={200}></Image>
+      <Image src="/portfolio-logo.svg" slt="logo-image" width={200} height={200}></Image>
       <div className="hidden sm:block">
         <div className="flex items-center gap-2 sm:gap-8 pr-10">
           <a href="#">HOME</a>

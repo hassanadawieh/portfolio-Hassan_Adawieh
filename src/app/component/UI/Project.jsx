@@ -9,7 +9,7 @@ const Project = ({ project }) => {
         width={800}
         height={400}
         className="object-cover rounded-md cursor-pointer"
-        alt="about-image"
+        alt="project-image"
       />
       <div className="absolute inset-0 bg-black opacity-0 rounded-md group-hover:opacity-90 transition-opacity flex flex-col items-center justify-center cursor-pointer">
         <h2 className="text-white text-[1.8rem] sm:text-[3rem]">

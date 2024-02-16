@@ -50,7 +50,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <footer className="w-full  flex items-center justify-center bg-green-600 gap-2">
-        <Image src="/portfolio-logo.svg" width={150} height={150} ></Image>
+        <Image src="/portfolio-logo.svg" alt="logo" width={150} height={150} ></Image>
         <a href="https://www.instagram.com/hassan_adawieh/">
           <FaInstagram className="text-[2rem] cursor-pointer" />
         </a>
