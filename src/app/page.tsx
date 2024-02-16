@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import NavBar from "@/app/component/NavBar";
 import About from "@/app/component/About";
@@ -11,10 +13,27 @@ import {
   FaEnvelope,
   FaInstagram,
 } from "react-icons/fa";
+import { useEffect, useState } from "react";
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log("Scroll position:", scrollPosition);
   return (
     <div className="w-full">
-      <NavBar />
+      <NavBar position={scrollPosition} />
       <div className="px-2 sm:px-20 h-[90vh] flex items-center justify-center">
         <div className="font-mono flex items-center flex-col">
           <p className="">LET IS BUILD SOMETHING TOGETHER</p>
@@ -50,7 +69,12 @@ export default function Home() {
       <Projects />
       <Contact />
       <footer className="w-full  flex items-center justify-center bg-green-600 gap-2">
-        <Image src="/portfolio-logo.svg" alt="logo" width={150} height={150} ></Image>
+        <Image
+          src="/portfolio-logo.svg"
+          alt="logo"
+          width={150}
+          height={150}
+        ></Image>
         <a href="https://www.instagram.com/hassan_adawieh/">
           <FaInstagram className="text-[2rem] cursor-pointer" />
         </a>
